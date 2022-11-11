@@ -12,7 +12,7 @@ import javax.validation.constraints.NotEmpty;
  */
 public class DepartamentDto {
     
-    @NotEmpty
+    @NotEmpty(message = "É necessário um nome para o departamento")
     private String DepartamentNome;
     
     public String getNome() {

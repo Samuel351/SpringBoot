@@ -46,7 +46,7 @@ public class WorkerDto {
         Cargo = workerModel.getCargo();
         Email = workerModel.getEmail();
         Nome = workerModel.getNome();
-        departament_id = workerModel.getDepartament_id();
+        departament_id = workerModel.getDepartament();
     }
     
 

@@ -39,7 +39,7 @@ public class WorkerModel extends RepresentationModel<WorkerModel> implements Ser
     
     @ManyToOne
     @JoinColumn(name = "departament_id")
-    private DepartamentModel departament_id;
+    private DepartamentModel Departament;
     
     public WorkerModel() {
     }
@@ -49,7 +49,7 @@ public class WorkerModel extends RepresentationModel<WorkerModel> implements Ser
         this.Email = Email;
         this.Cargo = Cargo;
         this.Salario = Salario;
-        this.departament_id = departament_id;
+        this.Departament = departament_id;
     }
     
     public WorkerModel(int id, String Nome, String Email, String Cargo, Double Salario, DepartamentModel departament_id) {
@@ -58,7 +58,7 @@ public class WorkerModel extends RepresentationModel<WorkerModel> implements Ser
         this.Email = Email;
         this.Cargo = Cargo;
         this.Salario = Salario;
-        this.departament_id = departament_id;
+        this.Departament = departament_id;
     }
     
     public long getId() {
@@ -101,12 +101,12 @@ public class WorkerModel extends RepresentationModel<WorkerModel> implements Ser
         this.Salario = Salario;
     }
 
-    public DepartamentModel getDepartament_id() {
-        return departament_id;
+    public DepartamentModel getDepartament() {
+        return Departament;
     }
 
-    public void setDepartament_id(DepartamentModel departament_id) {
-        this.departament_id = departament_id;
+    public void setDepartament(DepartamentModel Departament) {
+        this.Departament = Departament;
     }
    
 }
